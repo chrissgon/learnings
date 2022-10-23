@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    // "module": "commonjs",
+    "sourceMap": true,
+    "target": "es5",
+    "rootDir": "../oop",
+    "outDir": "../oop/dist",
+    // "outFile": "main.js"
+  },
+  "files": ["../oop/main.ts"]
+}
