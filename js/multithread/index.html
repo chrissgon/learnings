@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multithread</title>
+
+    <script src="./src/index.js" type="module"></script>
+
+    <style>
+        .margin{
+            margin: 10px
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <div class="margin">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+        </div>
+        <div class="margin">
+            <label for="file">CSV FILE</label>
+            <input type="file" accept=".csv" id="file">
+        </div>
+        <div class="margin">
+            <input type="checkbox" checked id="worker">
+            <label for="worker">Should use worker threads?</label>
+        </div>
+        <div class="margin">
+            <input type="submit" id="submit">
+            <input type="reset" >
+        </div>
+        <div class="margin">
+            <label for="size">Size</label>
+            <output id="size"></output>
+        </div>
+        <div class="margin">
+            <label for="progress">Progress</label>
+            <progress id="progress" value="0" max="100">0%</progress>
+        </div>
+        <div class="margin">
+            <label for="debug">Debug</label>
+            <br>
+            <output id="debug"></output>
+        </div>
+    </form>
+</body>
+</html>
