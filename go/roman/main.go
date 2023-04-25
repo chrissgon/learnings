@@ -49,7 +49,5 @@ func NumberToRoman(number int) string {
 		return roman
 	}
 
-	
-
 	return "I"
 }
